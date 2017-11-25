@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="a3lena.a3shak.com.a3shak3lena">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        tools:overrideLibrary="android.support.customtabs" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <application
+        android:name=".util.StartUp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_menu"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_menu"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".slide_menu.SlideMenuAttribute"
+            android:label="Slide"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dealers.DealersMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dealers.ItemsOfCategory.ItemOfCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dealers.DealerDetails"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".Auth.Login"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Auth.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coupons.MyCoupons"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coupons.ScanCoupon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coupons.CouponDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Map.MapDealers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About.About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About.Terms"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

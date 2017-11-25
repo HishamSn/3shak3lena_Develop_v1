@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">عشاك علينا</string>
+
+    <string name="home">Home</string>
+    <string name="facebook_app_id">2117804265113542</string>
+    <string name="fb_login_protocol_scheme">fb2117804265113542</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">XdKM1vu0tjsdDJ1Z9dzIxINvt</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">EQ0vhxdxjVHx9RKyBsSgbbufWEuATsMIeWqEaGD4relK4n1iA7</string>
+    <string name="exchage">Exchage Coupon</string>
+    <string name="places">Places Coupon</string>
+    <string name="mapp">Map</string>
+    <string name="mycoupons">My Coupons</string>
+    <string name="profiile">My Profile</string>
+    <string name="about">About Us</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="setting">Change Language</string>
+    <string name="loginnav">Login</string>
+
+    <string name="see_more">see more</string>
+    <string name="seeall">See ِAll</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyAEOI1hJ_gM3UhJCH2yVbqOU8bTm6LXMus
+    </string>
+    <string name="title_activity_maps">Map</string>
+</resources>

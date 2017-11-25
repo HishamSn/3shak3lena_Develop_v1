@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">عشاك علينا</string>
+    <string name="facebook_app_id">2117804265113542</string>
+    <string name="fb_login_protocol_scheme">fb2117804265113542</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">XdKM1vu0tjsdDJ1Z9dzIxINvt</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">EQ0vhxdxjVHx9RKyBsSgbbufWEuATsMIeWqEaGD4relK4n1iA7</string>
+    <string name="home">الرئيسية</string>
+    <string name="exchage">أماكن صرف الكوبون</string>
+    <string name="places">أماكن توزيع الكوبون</string>
+    <string name="mapp">الخريطة</string>
+    <string name="mycoupons">كوبوناتي</string>
+    <string name="profiile">ملفي</string>
+    <string name="about">معلومات عنا</string>
+    <string name="terms">الشروط والأحكام</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="setting">تغيير اللغة</string>
+    <string name="loginnav">تسجيل دخول</string>
+
+    <string name="see_more">مشاهدة المزيد</string>
+    <string name="seeall">مشاهدة الكل</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve">
+        AIzaSyAEOI1hJ_gM3UhJCH2yVbqOU8bTm6LXMus
+    </string>
+    <string name="title_activity_maps">Map</string>
+</resources>

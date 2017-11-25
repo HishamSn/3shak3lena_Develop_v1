@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="a3lena.a3shak.com.a3shak3lena.Dealers.ItemsOfCategory.ItemOfCategory">
+
+    <include layout="@layout/app_search"/>
+
+    <TextView
+        android:id="@+id/titleallproductactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="المطاعم"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:background="@color/sliver_back"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/grey_dark"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_all_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleallproductactivity"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="a3lena.a3shak.com.a3shak3lena.Coupons.CouponDetails"
+    android:background="#FFF">
+
+    <include layout="@layout/app_bar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ViewPagerScanCoupon"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+        <daboubi.khalid.faisalawe.com.countdownlib.TickTockView
+            android:id="@+id/view_ticktock_countdown"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:tickCircleDuration="total_time"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/orange"
+            android:layout_below="@+id/ViewPagerScanCoupon"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_coupon_material"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:textSize="17dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="00"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_coupon_material"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:textSize="17dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.25"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="00"
+                android:textColor="#FFF"/>
+
+
+            <TextView
+                android:id="@+id/minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_coupon_material"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:paddingLeft="15dp"
+                android:textSize="17dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="00"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_coupon_material"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="3dp"
+                android:textSize="17dp"
+                android:layout_marginRight="3dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="00"
+                android:textColor="#FFF"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_created"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/timer"
+            android:text="تاريخ الاضافة : "
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/date_end"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/date_created"
+            android:text="تاريخ الانتهاء : "
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/number_coupon"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/date_end"
+            android:text="رقم الكوبون : "
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/points"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/number_coupon"
+            android:text="عدد النقاط : "
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+
+
+        <TextView
+            android:id="@+id/coupon_status"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/points"
+            android:text="الحالة : "
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <Button
+            android:id="@+id/btnReActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اعادة تفعيل"
+            android:gravity="center"
+            android:background="@drawable/button_orange"
+            android:textColor="#FFF"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textSize="17dp"
+            android:layout_below="@+id/coupon_status"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_marginTop="19dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

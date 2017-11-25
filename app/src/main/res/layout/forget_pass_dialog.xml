@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/txtforget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="هل نسيت كلمة المرور ؟"
+            android:textSize="17dp"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/etForgetMobile"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="ادخل رقم الهاتف"
+            android:background="@drawable/edittext_rounded_corners_forget"/>
+
+        <EditText
+            android:id="@+id/etActiveCop"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="ادخل كود التفعيل"
+            android:visibility="gone"
+            android:background="@drawable/edittext_rounded_corners_forget"/>
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="هل لديك كود التفعيل ؟"
+            android:textColor="@color/orange"
+            android:textSize="16dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="150dp"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_button_forget"
+            android:textColor="#FFF"
+            android:layout_height="35dp"
+            android:text="عن طريق رقم الهاتف"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/content">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="0.5"
+            android:textSize="17dp"
+            android:textColor="#FFF"
+            android:text="موافق"/>
+
+        <Button
+            android:id="@+id/yescode"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="0.5"
+            android:textSize="17dp"
+            android:textColor="#FFF"
+            android:text="موافق"/>
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="17dp"
+            android:background="@color/orange"
+            android:layout_weight="0.5"
+            android:text="إلغاء"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

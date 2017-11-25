@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment
+    android:name="a3lena.a3shak.com.a3shak3lena.slide_menu.BaseListFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slidemenu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dip"
+    android:layout_height="wrap_content"
+    />

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <a3lena.a3shak.com.slider_image_lib.views.BannerSlider
+            android:id="@+id/banner_slider1"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/place2"
+            android:layout_height="430dp"
+            app:animateIndicators="true"
+            app:defaultIndicators="circle"
+            app:interval="0"
+            app:loopSlides="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/offer_img"
+        android:background="@drawable/f44min"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="11dp"
+            android:onClick="go_to"
+            android:text="to"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:background="@drawable/logo_menu"
+        android:id="@+id/r2"
+        android:layout_alignParentTop="true"
+        android:layoutDirection="ltr"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/offer_img1"
+        android:layout_marginTop="405dp"
+        android:background="@drawable/f22min"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/placesCoupon"
+                    android:layout_width="70dp"
+                    android:layout_gravity="center"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/f23min" />
+
+                <TextView
+                    android:id="@+id/txtTaken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="أماكن صرف الكوبون"
+                    android:textColor="#fff"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d64e1e" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/mapCoupon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/f24min" />
+
+                <TextView
+                    android:id="@+id/txtMap"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الخريطة"
+                    android:textColor="#fff"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d64e1e" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/exchangeCoupon"
+                    android:layout_width="70dp"
+                    android:layout_gravity="center"
+                    android:layout_height="70dp"
+                    app:srcCompat="@drawable/f25min"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:id="@+id/txtGiven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="أماكن توزيع الكوبون"
+                    android:textColor="#fff"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arabic"
+        android:visibility="gone"
+        android:onClick="onClickChangeLanguage"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        >
+
+        <ImageView
+            android:id="@+id/btnMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:src="@drawable/f29"
+            android:layout_marginTop="12dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
